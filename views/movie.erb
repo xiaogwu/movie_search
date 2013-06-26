@@ -1,0 +1,16 @@
+<h2><%= @movie["Title"] %> (<%= @movie["Year"] %>)</h2>
+<img src='<%= @movie["Poster"]%>' />
+
+
+<div class="movie-details">
+	<ul>
+		<li><strong>Rated:</strong> <%= @movie["Rated"] %></li>
+		<li><strong>Runtime:</strong> <%= @movie["Runtime"] %></li>
+		<li><strong>Genre:</strong> <%= @movie["Genre"] %></li>
+		<li><strong>Released:</strong> <%= @movie["Released"] %></li>
+		<li><strong>Director:</strong> <%= @movie["Director"] %></li>
+		<li><strong>Writer:</strong> <%= @movie["Writer"] %></li>
+		<li><strong>Actors:</strong> <%= @movie["Actors"] %></li>
+		<li><strong>Plot:</strong> <%= @movie["Plot"] %></li>
+	</ul>
+</div>

@@ -1,0 +1,10 @@
+<div>
+	<strong>Movie Resutlts:</strong>
+	<ol>
+		<% @movies.each do |movie| %>
+		<li>
+			<a href='/movie?id=<%=movie["imdbID"]%>'><%=movie["Title"]%></a>
+		</li>
+		<% end %>
+	</ol>
+</div>

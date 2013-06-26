@@ -1,0 +1,14 @@
+body {
+	font-family: "helvetica";
+	background-color: beige;
+	background-image: url(http://127.0.0.1:4567/images/movies.jpg);
+}
+
+form {
+	display: inline;
+}
+
+.movie-details {
+	display: inline;
+	width: 200px;
+}
