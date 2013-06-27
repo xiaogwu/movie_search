@@ -15,7 +15,7 @@ get '/search' do
 end
 
 get '/movie' do
-  url = "http://www.omdbapi.com/?i=#{URI.escape(params[:id])}"
+  url = "http://www.omdbapi.com/?i=#{URI.escape(params[:id])}&tomatoes=true"
   @movie = JSON.load(open(url).read)
   erb :movie
 end

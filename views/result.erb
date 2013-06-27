@@ -1,5 +1,6 @@
 <div>
 	<strong>Movie Resutlts:</strong>
+	<% unless @movies.nil? %>
 	<ol>
 		<% @movies.each do |movie| %>
 		<li>
@@ -7,6 +8,9 @@
 		</li>
 		<% end %>
 	</ol>
+	<% else %>
+		<p>No Movies Found...</p>
+	<% end %>
 </div>
 
 <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
