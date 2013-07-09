@@ -7,14 +7,14 @@ get '/' do
   erb :home
 end
 
-get '/search' do
+get '/search/?' do
   url = "http://www.omdbapi.com/?s=#{URI.escape(params[:q])}"
   @results = JSON.load(open(url).read)
   @movies = @results["Search"]
   erb :result
 end
 
-get '/movie' do
+get '/movie/?' do
   url = "http://www.omdbapi.com/?i=#{URI.escape(params[:id])}&tomatoes=true"
   @movie = JSON.load(open(url).read)
   erb :movie
